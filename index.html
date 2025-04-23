@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <h2>Portfolio</h2>
     <nav>
@@ -16,6 +18,7 @@
     </nav>
   </header>
 
+  <!-- Home Section -->
   <section id="home" class="section">
     <div class="home-content">
       <h1>Hello, It's Me</h1>
@@ -26,43 +29,68 @@
       <a href="#tasks" class="btn secondary-btn">Lihat Tugas</a>
     </div>
     <div class="avatar">
-      <img src="photo.jpg" alt="avatar">
+      <img src="photo.jpg" alt="avatar" />
     </div>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="section">
     <div class="avatar">
-      <img src="photo.jpg" alt="avatar">
+      <img src="photo.jpg" alt="avatar" />
     </div>
     <div class="about-content">
       <h2>About <span>Me</span></h2>
       <h3>M.Fadhill Hafizh Alqori</h3>
-      <p>Hai Kenalin,Nama lengkap ku Muhammad Fadhill Hafizh Alqori,Mahasiswa Pendidikan Teknologi Informasi Universitas Lampung</p>
+      <p>Hai Kenalin, Nama lengkapku Muhammad Fadhill Hafizh Alqori, Mahasiswa Pendidikan Teknologi Informasi Universitas Lampung.</p>
     </div>
   </section>
 
+  <!-- Tasks Section -->
   <section id="tasks" class="section">
-    <div class="gallery">
-      <h2>Tugas Saya</h2>
-      <a href="https://drive.google.com/drive/folders/1NDOvGYMq6sTO38GWuAd918mWLNB0iGZS?usp=sharing">
-        <img src="thumb1.jpeg" alt="Tugas 1">
-      </a>
-      <a href="https://drive.google.com/drive/folders/1ctcZQN676oxYHaLJS42vgeptqqokfGfk?usp=sharing" target="_blank">
-        <img src="thumb2.png" alt="Tugas 2">
-      </a>
-      <a href="https://drive.google.com/drive/folders/1322tF1crWHFzuFWLcq1wJFjLgO0TWTIi?usp=sharing">
-        <img src="thumb3.png" alt="Tugas 3">
-      </a>
-      <a href="https://drive.google.com/drive/folders/1yBY2YjMP_hrpjmo0QAAfGM_mS1vYFnQ4?usp=sharing" target="_blank">
-        <img src="thumb4.png" alt="Tugas 4">
-      </a>
-    </div>
-  </section>
+    <div style="width: 100%;">
+      <h2 class="tugas-saya">Tugas Saya</h2>
+      <div class="gallery">
+        <!-- Kartu 1 -->
+        <div class="card-gallery">
+          <img src="thumb1.jpeg" alt="Tugas 1">
+          <div class="card-content">
+            <h3>Tokoh Perintis Grafika Komputer</h3>
+            <p>Alvy Ray Smith - Pelopor Grafika Komputer dan Co-Founder Pixar.</p>
+            <div class="card-buttons">
+              <a href="https://drive.google.com/drive/folders/1NDOvGYMq6sTO38GWuAd918mWLNB0iGZS?usp=sharing" class="video" target="_blank">Drive</a>
+            </div>
+          </div>
+        </div>
 
-  <footer>
-    <p>Instagram: <a href="https://instagram.com/fadhillhaffz" target="_blank">@username</a></p>
-  </footer>
+        <!-- Kartu 2 -->
+        <div class="card-gallery">
+          <img src="thumb2.png" alt="Tugas 2">
+          <div class="card-content">
+            <h3>Algoritma Pembentukan Garis</h3>
+            <p>DDA & Bresenham digunakan untuk menggambar garis pada grafika komputer.</p>
+            <div class="card-buttons">
+              <a href="https://drive.google.com/drive/folders/1ctcZQN676oxYHaLJS42vgeptqqokfGfk?usp=sharing" class="video" target="_blank">Drive</a>
+            </div>
+          </div>
+        </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+        <!-- Kartu 3 -->
+        <div class="card-gallery">
+          <img src="thumb3.png" alt="Tugas 3">
+          <div class="card-content">
+            <h3>Transformasi 2D</h3>
+            <p>Implementasi translasi, rotasi, dan skala dalam grafika komputer.</p>
+            <div class="card-buttons">
+              <a href="https://drive.google.com/drive/folders/1322tF1crWHFzuFWLcq1wJFjLgO0TWTIi?usp=sharing" class="video" target="_blank">Drive</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kartu 4 -->
+        <div class="card-gallery">
+          <img src="thumb4.png" alt="Tugas 4">
+          <div class="card-content">
+            <h3>Clipping dan Viewing</h3>
+            <p>Mengenal konsep pemotongan dan tampilan dalam visualisasi grafis.</p>
+            <div class="card-buttons">
+              <a href="https://drive.google.com/drive/folders/1yBY2YjMP_hrpjmo0QAAfGM_mS1vYFnQ4?usp=
