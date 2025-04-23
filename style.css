@@ -33,7 +33,7 @@ header .container {
   padding: 1rem 2rem;
 }
 
-header h1 {
+header h1, header h2 {
   font-size: 2rem;
   color: #0f172a;
   font-weight: 700;
@@ -94,7 +94,7 @@ nav a:hover {
   align-items: center;
 }
 
-.about .card img {
+.about .card img, .avatar img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -113,22 +113,22 @@ nav a:hover {
 
 .tugas {
   padding: 5rem 1rem;
-  background-color: #f8fafc;
+  background-color: #0f172a;
   text-align: center;
 }
 
 .tugas-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #0f172a;
+  color: #f8fafc;
   margin-bottom: 3rem;
   text-align: center;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
   max-width: 1000px;
   margin: auto;
   justify-items: center;
@@ -139,25 +139,28 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .gallery img {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.03);
 }
 
 .gallery p {
   margin-top: 0.5rem;
   font-weight: 500;
   color: #1e293b;
-  text-align: center;
 }
 
 footer {
@@ -169,10 +172,30 @@ footer {
   letter-spacing: 0.5px;
 }
 
-#tasks h2.tugas-title {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #0f172a;
+.section {
+  padding: 5rem 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 1rem 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+.secondary-btn {
+  background-color: #64748b;
+}
+
+.secondary-btn:hover {
+  background-color: #475569;
 }
