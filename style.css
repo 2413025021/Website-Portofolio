@@ -122,8 +122,10 @@ nav a:hover {
 }
 
 .card-gallery img {
-  max-width: 150px; /* Menentukan ukuran maksimal gambar */
+  max-width: 400px; /* Menentukan ukuran maksiml gambar */
   height: auto; /* Menjaga rasio gambar tetap */
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .card-content {
