@@ -98,17 +98,25 @@ nav a:hover {
   color: #38bdf8;
 }
 
+.tugas-saya {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: rem;
+  text-align: center; /* Ini yang bikin rata tengah */
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: rem;
 }
 
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 15px;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
