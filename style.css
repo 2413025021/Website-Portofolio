@@ -102,28 +102,78 @@ nav a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   color: #f8fafc;
-  margin-bottom: rem;
+  margin-bottom: 2rem;
   text-align: center; /* Ini yang bikin rata tengah */
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  margin-top: rem;
+.card-gallery {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e293b;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-.gallery img {
+.card-gallery:hover {
+  transform: translateY(-5px);
+}
+
+.card-gallery img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
+.card-content {
+  padding: 2rem;
 }
+
+.card-content h3 {
+  color: #f472b6; /* Warna pink seperti teks di gambar */
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.card-buttons a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.card-buttons a.video {
+  background-color: #ec4899; /* pink */
+}
+
+.card-buttons a.video:hover {
+  background-color: #db2777;
+}
+
+.card-buttons a.word {
+  background-color: #3b82f6; /* biru */
+}
+
+.card-buttons a.word:hover {
+  background-color: #2563eb;
+}
+
 
 footer {
   background-color: #1e293b;
