@@ -140,7 +140,7 @@ nav a:hover {
 
 .card-content p {
   font-size: 0.95rem;
-  color: #e2e8f0;
+  color: #38bdf8;
   margin-bottom: 1rem;
 }
 
@@ -160,19 +160,19 @@ nav a:hover {
 }
 
 .card-buttons a.video {
-  background-color: #ec4899; /* pink */
+  background-color: #38bdf8; /* pink */
 }
 
 .card-buttons a.video:hover {
-  background-color: #db2777;
+  background-color: #38bdf8;
 }
 
 .card-buttons a.word {
-  background-color: #3b82f6; /* biru */
+  background-color: #38bdf8; /* biru */
 }
 
 .card-buttons a.word:hover {
-  background-color: #2563eb;
+  background-color: #38bdf8;
 }
 
 
